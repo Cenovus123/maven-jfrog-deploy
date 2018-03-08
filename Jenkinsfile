@@ -8,7 +8,7 @@ node {
     }
  
     stage ('Artifactory configuration') {
-        // Obtain an Artifactory server instance, defined in Jenkins --> Manage:
+        // Obtain an Artifactory server instance, defined in Jenkins --> Manage..:
          
         rtMaven.tool = 'maven3.5.2' // Tool name from Jenkins configuration
         rtMaven.deployer releaseRepo: 'libs-release-local', snapshotRepo: 'libs-snapshot-local', server: server
